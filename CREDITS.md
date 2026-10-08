@@ -10,3 +10,4 @@ redesign-with-nazmul by Md. Nazmul Hassan (naz). Built on ideas and material fro
 - shadcn/ui official skill, github.com/shadcn-ui/ui (MIT) — distilled in shadcn-official-rules.md
 - UI Skills by ibelick, github.com/ibelick/ui-skills (MIT) — baseline/a11y/motion rules + DESIGN.md example library
 - Skills by Jakub Krehel, github.com/jakubkrehel/skills (MIT) — exact polish values in product-ui-polish.md
+- Hugeicons Free, hugeicons.com / @hugeicons/core-free-icons (MIT) — bundled in tools/hugeicons

@@ -18,6 +18,7 @@ More toolkits are built in:
 - **Product UI polish** (`references/product-ui-polish.md`): exact values for surfaces, motion, typography, layout, color, UI copy, accessibility and metadata, plus audit/review report formats. Run it on every dashboard/app output.
 - **shadcn official rules** (`references/shadcn-official-rules.md`): how correct shadcn/ui code is composed (FieldGroup, gap not space-y, Card anatomy, semantic tokens). Read it whenever output is React + shadcn.
 - **DESIGN.md library** (`references/design-md-examples/`): 18 real design systems (Vercel, Atlassian, Clerk, Mintlify, Culture Amp…) for structure and "feel like X" directions. Never copy their brand.
+- **Icon pack** (`tools/hugeicons/`): 6,000+ Hugeicons Free SVGs offline, with search/svg/sprite commands. See `references/icons.md`.
 - **Design intelligence engine** (`tools/ui-ux-pro-max/`): a local searchable database of 79 styles, 192 product palettes, 74 font pairings, 119 UX guidelines, landing patterns and chart types. Use it when there is no brand direction yet (see step 3).
 
 **Dashboard theme choice**: default to the monochrome shadcn UI Kit look (`assets/tokens.css`). Use the **Prism** theme (`references/prism-dashboard-patterns.md` + `assets/tokens-prism.css`, from Hassan's own Figma kit) when the product is HR, ATS, recruitment, people-ops, payroll, or enterprise back-office, or when the user asks for a friendly blue SaaS look. The user's brand always wins over both. For a domain-specific layout (freelance, e-learning, job search/ATS, crypto, SaaS metrics, social planner, onboarding, auth, settings) check `references/prism-screen-library.md` first.
@@ -78,7 +79,7 @@ Treat engine output as suggestions, not orders. If bash isn't available, skip it
 - Real states: hover, focus-visible ring, active (`scale(0.97)`), disabled, empty, skeleton loading, inline errors.
 - Motion: **websites/sections** follow `motion-emil.md` (custom ease-out curves, expressive entrances allowed). **Dashboards/apps** follow `product-ui-polish.md` §3 (feedback ≤ 200ms, no motion on high-frequency actions, Tailwind easing). Both: press `scale(0.96)`, only transform/opacity, nothing from `scale(0)`, reduced-motion respected.
 - Content: real copy, believable names and organic numbers, no lorem ipsum.
-- Icons: Lucide (kit default), 16px in buttons/nav, stroke 2, consistent.
+- Icons: keep the project's library if it has one; otherwise **Hugeicons Free stroke-rounded** (bundled, see `references/icons.md` and `tools/hugeicons/icon.py`). 16–20px, stroke 1.5, one library per surface.
 
 ### 5. Pre-flight check (do it silently, fix before delivering)
 
