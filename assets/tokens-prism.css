@@ -1,0 +1,81 @@
+/* Prism theme for redesign-with-nazmul — values from Hassan's Figma "Prism Dashboard UI Kit – Desktop" (HR page).
+   shadcn-compatible variable names so the same components work. */
+:root {
+  --radius: 0.25rem; /* 4px; cards may use 8px */
+
+  --background: #F6F6F6;
+  --foreground: #202020;
+  --card: #FFFFFF;
+  --card-foreground: #202020;
+  --popover: #FFFFFF;
+  --popover-foreground: #202020;
+
+  --primary: #1F7BF4;
+  --primary-foreground: #FFFFFF;
+  --secondary: #FFFFFF;            /* outline-style secondary buttons */
+  --secondary-foreground: #202020;
+  --muted: #F6F6F6;
+  --muted-foreground: #84818A;
+  --text-secondary: #484848;
+  --accent: rgb(31 123 244 / 0.08); /* active nav / highlighted rows */
+  --accent-foreground: #1F7BF4;
+  --destructive: #FC0000;
+  --success: #0AA630;
+  --warning: #FFA043;
+  --info: #00AAFF;
+  --brand-dark: #0B438D;
+  --pink: #FA699D;
+
+  --border: #E8E8E8;
+  --input: #E8E8E8;
+  --ring: #1F7BF4;
+
+  --chart-1: #1F7BF4;
+  --chart-2: #00AAFF;
+  --chart-3: #0AA630;
+  --chart-4: #FFA043;
+  --chart-5: #FA699D;
+
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #202020;
+  --sidebar-accent: rgb(31 123 244 / 0.08);
+  --sidebar-accent-foreground: #1F7BF4;
+  --sidebar-border: #E8E8E8;
+
+  --tint: 0.08;                     /* faded-color opacity for pills/icon circles */
+  --shadow-card: 0 1px 3px rgb(0 0 0 / 0.08);
+
+  --sidebar-width: 250px;
+  --header-height: 72px;
+  --page-gutter: 40px;
+  --card-gap: 24px;
+  --card-padding: 24px;
+
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  /* type: h1 600 36/46 · h2 600 24 · h3 600 18/24 · h4 16/20 · body 14 (/24 paragraphs) · meta 12
+     numbers: big 700 32 · medium 700 24 · small 600 14 */
+}
+.dark, :root[data-theme="dark"] {
+  --background: #141416;
+  --foreground: #F2F2F3;
+  --card: #1C1C1F;
+  --card-foreground: #F2F2F3;
+  --popover: #1C1C1F;
+  --popover-foreground: #F2F2F3;
+  --muted: #232327;
+  --muted-foreground: #A09DA6;
+  --text-secondary: #C4C2C8;
+  --border: rgb(255 255 255 / 0.08);
+  --input: rgb(255 255 255 / 0.12);
+  --primary: #3D8FF6;
+  --accent: rgb(61 143 246 / 0.14);
+  --accent-foreground: #6AAAF8;
+  --sidebar: #1C1C1F;
+  --sidebar-border: rgb(255 255 255 / 0.08);
+  --sidebar-accent: rgb(61 143 246 / 0.14);
+  --sidebar-accent-foreground: #6AAAF8;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4);
+}
+body { background: var(--background); color: var(--foreground); font-family: var(--font-sans); -webkit-font-smoothing: antialiased; }
+.tabular { font-variant-numeric: tabular-nums; }
+.pill { border-radius: 2px; padding: 2px 8px; font: 500 12px/16px var(--font-sans); }
