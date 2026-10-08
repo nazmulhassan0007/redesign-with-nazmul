@@ -14,8 +14,12 @@ A fast, opinionated UI redesign skill for Claude by **Md. Nazmul Hassan (naz)**.
 - 18 real-world **DESIGN.md** examples
 
 ## Install
-- **Claude.ai**: download `redesign-with-nazmul.skill` from Releases (or zip the `redesign-with-nazmul/` folder) and upload it in Settings → Skills.
-- **Claude Code**: copy `redesign-with-nazmul/` into `~/.claude/skills/` (or your project's `.claude/skills/`).
+- **Claude Code**: clone the repo straight into your skills folder.
+  ```bash
+  git clone https://github.com/nazmulhassan0007/redesign-with-nazmul.git ~/.claude/skills/redesign-with-nazmul
+  ```
+  Use your project's `.claude/skills/` instead to install it for one project only. Run `git pull` in that folder to update.
+- **Claude.ai**: click **Code → Download ZIP** on this page, then upload the zip in Settings → Capabilities → Skills.
 
 ## Usage
 ```
@@ -29,10 +33,13 @@ Review this component's motion
 ```
 redesign-with-nazmul/
 ├── SKILL.md                  workflow, speed rules, pre-flight check
+├── CREDITS.md                sources and licenses
 ├── references/               design knowledge loaded on demand
 ├── assets/                   tokens.css, tokens-prism.css, licenses
-└── tools/ui-ux-pro-max/      local search engine (python3, no deps)
+└── tools/
+    ├── ui-ux-pro-max/        local search engine (python3, no deps)
+    └── hugeicons/            offline icon lookup (python3, no deps)
 ```
 
 ## Credits
-See `redesign-with-nazmul/CREDITS.md`. Bundled third-party material is MIT / Apache-2.0 licensed; their license files are in `redesign-with-nazmul/assets/` and `tools/ui-ux-pro-max/LICENSE`.
+See `CREDITS.md`. Bundled third-party material is MIT / Apache-2.0 licensed; their license files are in `assets/`, `tools/ui-ux-pro-max/LICENSE` and `tools/hugeicons/LICENSE.md`.
